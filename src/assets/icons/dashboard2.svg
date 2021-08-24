@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #1e73bc;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_741" data-name="Rectangle 741" class="cls-1" width="24" height="24" transform="translate(393 2312)"/>
+    </clipPath>
+  </defs>
+  <g id="dashboard" class="cls-2" transform="translate(-393 -2312)">
+    <path id="path" class="cls-3" d="M372.6,1056v-10h8v10Zm0,8v-6h8v6Zm10-18h8v6h-8Zm0,18v-10h8v10Z" transform="translate(23.4 1269)"/>
+  </g>
+</svg>

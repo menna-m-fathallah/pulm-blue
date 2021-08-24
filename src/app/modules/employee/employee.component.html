@@ -1,0 +1,17 @@
+<div class="table-container custom-card employee-popup">
+    <header class="text-center">
+        <h2 class="secondray">Create Account</h2>
+        <p class="gray">create a role to manage hierarchy between employees</p>
+    </header>
+    <form class="row" [formGroup]="employeeForm" (ngSubmit)="submit(employeeForm)">
+        <mat-form-field class="w-100 pb-3" appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="" autocomplete="off" formControlName="email">
+        </mat-form-field>
+        <mat-form-field class="w-100 pb-3" appearance="outline">
+            <mat-label>Role</mat-label>
+            <input matInput type="text" placeholder="" autocomplete="off" formControlName="role">
+        </mat-form-field>
+        <button class="btn-login btn col-12 bg-secondaray text-white">Create</button>
+    </form>
+</div>

@@ -1,0 +1,20 @@
+<div class="d-flex  bg-light parent">
+  <div class="side-menu-container">
+    <app-side-menu (collapsedEvent)="switchFlag($event)"></app-side-menu>
+  </div>
+  <div class="table-container " [ngClass]='{"full-size":collapsedFlag}'>
+    <div class="gradient-background">
+    </div>
+    <div class="table-container-content">
+      <div class="header d-flex">
+        <div class="welcome-message">
+          <p class="welcome">Welcome</p>
+          <p>{{user}}</p>
+        </div>
+        <div class="notification bg-white primary"><i class="material-icons">add_alert</i><span>notification</span>
+        </div>
+      </div>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<nav class="nav-container full-height d-flex justify-content-between" id="side-bar">
+  <div class="upper-nav-part">
+    <div class="upper-nav-part d-flex justify-content-between">
+      <p class="logo">CRM</p>
+      <div class="back-icon" (click)="toggle()">
+        <i class="material-icons">keyboard_arrow_left</i>
+      </div>
+    </div>
+    <ul class="links">
+      <li class="d-flex align-items-center" routerLink="/home/dashboard" routerLinkActive="active">
+        <img class="not-active-img" src="./../../../../../assets/icons/dashboard.svg">
+        <img class="active-img" src="./../../../../../assets/icons/dashboard2.svg">
+        <a>Dashboard</a>
+      <li class="d-flex align-items-center" routerLink="/home/registeredUsers" routerLinkActive="active">
+        <i class="material-icons gray">supervisor_account</i>
+        <a>Registered Users</a>
+      </li>
+      <li class="d-flex align-items-center" routerLink="/home/customers" routerLinkActive="active">
+        <img class="not-active-img" src="./../../../../../assets/icons/cutomer.svg">
+        <img class="active-img" src="./../../../../../assets/icons/cutomer2.svg">
+        <a>Customers</a>
+      </li>
+      <li *ngIf="access" class="d-flex align-items-center" routerLink="/home/employee" routerLinkActive="active">
+        <img class="not-active-img" src="./../../../../../assets/icons/manger.svg">
+        <img class="active-img" src="./../../../../../assets/icons/manger2.svg">
+        <a>Employee</a>
+      </li>
+    </ul>
+  </div>
+  <li class="logout-button d-flex align-items-center" (click)="logout()">
+    <i class="material-icons red-color">exit_to_app</i>
+    <a class="red-color">Log out</a>
+  </li>
+</nav>

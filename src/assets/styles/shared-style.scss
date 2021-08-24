@@ -1,0 +1,159 @@
+@import './variables';
+@import './fonts';
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    :focus { outline: none; }
+}
+:root{
+    background-color: $light-color !important;
+}
+input,a,button{
+    font-size:12px !important;
+}
+//colors
+.primary{
+    color: $primary_color;
+}
+.secondray{
+    color: $secondary_color;
+}
+.gray{
+    color: $gray_color !important;
+}
+.red-color{
+    color: $red-color !important;
+}
+.light-gray{
+    color: $light-gray-color !important;
+}
+//backgrounds
+.bg-light{
+    background-color: $light-color !important;
+}
+.bg-primary{
+    background-color: $primary_color !important;
+}
+.bg-secondaray{
+    background-color: $secondary_color !important;
+}
+//shared style
+.table-container{
+    cursor: pointer;
+    width: 100%;
+}
+.custom-card{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12); 
+}
+//heights
+.full-height{
+    height: 100vh;
+    max-height: 100vh;
+}
+//font-sizes
+p{
+    font-size: 10px;
+}
+//fonts
+.ExtraBold{
+    font-weight: 800;
+}
+.bold{
+    font-weight: 900;
+}
+//override angular material style
+.mat-form-field-appearance-outline .mat-form-field-label{
+    margin: 0;
+    top:1.5em;
+}
+.mat-form-field-wrapper{
+    padding-bottom: 0 !important;
+}
+.mat-form-field-appearance-outline .mat-form-field-infix{
+    padding:0;
+    height: 40px !important;
+}
+.mat-form-field-wrapper{
+    padding-bottom: 1em;
+}
+//border color on focus
+.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+    color: #37b4ed !important;
+}
+//label color on focus
+.mat-form-field.mat-focused .mat-form-field-label{
+    color: #37b4ed !important;
+}
+
+.mat-form-field-label{
+    color: #37b4ed !important;
+    font-size: 12px !important;
+    padding-top: 3px;
+    &.mat-form-field-empty{
+        color: $light-gray-color !important;
+        font-size: 12px !important;
+    }
+}
+.mat-form-field-should-float.mat-form-field-appearance-outline .mat-form-field-outline-thick{
+    opacity: 1 !important;
+
+}
+
+// override style of table
+.mat-table{
+    background: transparent;
+}
+// override style of dropdwon
+
+.drop-down-container .mat-form-field-appearance-legacy .mat-form-field-infix{
+    padding: 0px !important;
+}
+.drop-down-container .mat-form-field-infix{
+    border: 0px !important;
+}
+
+.drop-down-container .mat-form-field-wrapper .mat-form-field-underline{
+    display: none !important;
+}
+
+.mat-select-value-text span{
+    font-size: 14px;
+    font-weight: 700;
+}
+//color of text in drowpdown 
+.Refused .drop-down-container .mat-select-value-text ,.Refused .drop-down-container .mat-select-arrow{
+    color: $red-color;
+}
+.Contacted .drop-down-container .mat-select-value-text , .Contacted .drop-down-container .mat-select-arrow{
+    color: $primary_color;
+}
+//handle pagination style
+.pagination-prev , .pagination-next{
+    a{
+        font-size: 25px !important;
+        padding: 0 .75rem;
+    }
+}
+
+//handle modal
+.notification-popup{
+    .modal-content{
+        width: 304px;
+        margin: auto;
+    }
+}
+
+body .ui-datepicker{
+    width: 100%;
+    border:1px solid rgba(0, 0, 0, 0.12)  ;
+    table{
+        font-size: 10px;
+    }
+    .ui-state-active{
+        background-color:$primary_color !important;
+    }
+}

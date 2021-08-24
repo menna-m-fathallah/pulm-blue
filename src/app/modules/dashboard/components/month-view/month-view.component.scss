@@ -1,0 +1,45 @@
+.col-14{
+   flex: 0 0 14.28%;
+   max-width: 14.28%;
+   padding: 2px;
+  }
+.content{
+   app-day-content{
+      border-top: 1px solid #b9b9b9;
+      border-left: 1px solid #b9b9b9;
+      &:nth-child(7n){
+         border-right: 1px solid #b9b9b9;
+      }
+      &:nth-child(30){
+         border-bottom: 1px solid #b9b9b9;
+      }
+      &:nth-child(31){
+         border-bottom: 1px solid #b9b9b9;
+      }
+      &:nth-child(32){
+         border-bottom: 1px solid #b9b9b9;
+      }
+      &:nth-child(33){
+         border-bottom: 1px solid #b9b9b9;
+      }
+      &:nth-child(34){
+         border-bottom: 1px solid #b9b9b9;
+      }
+      &:nth-child(35){
+         border-bottom: 1px solid #b9b9b9;
+      }
+      &:nth-child(29){
+         border-bottom: 1px solid #b9b9b9;
+      }
+   }
+   .active{
+      // background: rgba(75, 164, 243, 0.24) !important;
+   }
+   .today{
+      background: rgba(141, 202, 255, 0.5) !important;
+   }
+   .last-month{
+      // background: #b9b9b9;
+      opacity: 0.5;
+   }
+}

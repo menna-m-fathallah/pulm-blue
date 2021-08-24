@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #1e73bc;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_744" data-name="Rectangle 744" class="cls-1" width="24" height="24" transform="translate(393 2456)"/>
+    </clipPath>
+  </defs>
+  <g id="manger" class="cls-2" transform="translate(-393 -2456)">
+    <g id="noun_Employee_2327807" transform="translate(386.44 2453.096)">
+      <g id="Group_698" data-name="Group 698" transform="translate(10.56 4.35)">
+        <path id="Path_409" data-name="Path 409" class="cls-3" d="M25.561,22.474a.641.641,0,0,0-.07.037l-.122.063c-.07.037-.14.077-.21.111a.665.665,0,0,1-.077.03l-.048.018a3.862,3.862,0,0,1-2.993,0L22,22.714a.44.44,0,0,1-.074-.03,1.891,1.891,0,0,1-.21-.111l-.122-.066a.642.642,0,0,1-.07-.037,4.914,4.914,0,0,0-2.93,4.211h9.9A4.921,4.921,0,0,0,25.561,22.474Z" transform="translate(-15.627 -15.783)"/>
+        <circle id="Ellipse_15" data-name="Ellipse 15" class="cls-3" cx="0.221" cy="0.221" r="0.221" transform="translate(7.691 15.038)"/>
+        <path id="Path_410" data-name="Path 410" class="cls-3" d="M24.537,10.409A3.3,3.3,0,1,0,23.05,7.653,3.33,3.33,0,0,0,24.537,10.409Z" transform="translate(-18.441 -4.35)"/>
+        <path id="Path_411" data-name="Path 411" class="cls-3" d="M26.056,43.065l.583-6.107a1.2,1.2,0,0,0-1.2-1.317H12.756a1.2,1.2,0,0,0-1.2,1.317l.583,6.107ZM19.1,38.485a.867.867,0,1,1-.867.867A.869.869,0,0,1,19.1,38.485Z" transform="translate(-11.187 -24.093)"/>
+        <rect id="Rectangle_739" data-name="Rectangle 739" class="cls-3" width="15.824" height="0.646" transform="translate(0 19.761)"/>
+      </g>
+    </g>
+  </g>
+</svg>

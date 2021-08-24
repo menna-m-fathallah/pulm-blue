@@ -1,0 +1,48 @@
+<div class="notification-popup">
+  <!-- <div class="modal-header">
+   
+  </div> -->
+  <div class="modal-body">
+    <div class="header d-flex justify-content-between">
+      <h4 class="modal-title pull-left">Create notification</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="close()">
+        &times;
+      </button>
+    </div>
+    <form class="w-100" [formGroup]="eventForm" (ngSubmit)="submit(eventForm)">
+      <mat-form-field class="w-100" appearance="outline">
+        <mat-label>Title</mat-label>
+        <input matInput placeholder="" autocomplete="off" formControlName="title">
+      </mat-form-field>
+      <mat-form-field class="w-100" appearance="outline">
+        <mat-label>Description</mat-label>
+        <textarea matInput placeholder=""></textarea>
+      </mat-form-field>
+      <div class="d-flex w-100 flex-wrap">
+        <div (click)="openCalenderView()" *ngIf="!calenderView" class="d-flex align-items-end mr-1 col display-date">
+          <i class="material-icons">date_range</i>
+          <p>{{date | date:'mediumDate'}}</p>
+        </div>
+        <p-calendar *ngIf="calenderView" [minDate]="today" panelStyleClass="col-12" styleClass="w-100"
+          formControlName="date" readonlyInput="true" inline="true" (onSelect)="closeCalenderView($event)">
+          <p-header>
+            <button class="close-button btn px-1 py-0" type="button" (click)="calenderView=false"><i
+                class="material-icons">clear</i></button>
+          </p-header>
+        </p-calendar>
+        <div (click)="openClockView()" [ngClass]="{'ml-1': !calenderView}" *ngIf="!clockView"
+          class="d-flex align-items-end col display-date">
+          <i class="material-icons">alarm_on</i>
+          <p>{{time}}</p>
+        </div>
+        <p-calendar *ngIf="clockView" [inline]="true" panelStyleClass="col-12" styleClass="w-100" formControlName="time" timeOnly="true" hourFormat="12"
+          showIcon="true" (onClose)="closeClockView(time)" [readonlyInput]="true">
+          <p-header>
+            <button class="close-button btn px-1 py-0" type="button" (click)="closeClockView()"><i
+                class="material-icons">clear</i></button>
+          </p-header>
+        </p-calendar>
+      </div>
+    </form>
+  </div>
+</div>

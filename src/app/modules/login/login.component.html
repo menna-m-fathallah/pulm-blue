@@ -1,0 +1,33 @@
+<section class="login-container full-height">
+  <section class="custom-container">
+    <section class="login-card row">
+      <div class="form-card bg-white">
+        <div class="form-container text-center">
+          <h4 class="tilte secondray ExtraBold">Login</h4>
+          <h6 class="gray">Hello friend 👋👋</h6>
+          <p class="sub-title2 light-gray">please fill out the form below to get started</p>
+          <form class="row" [formGroup]="loginForm" (ngSubmit)="submit(loginForm.value)">
+            <mat-form-field class="w-100 pb-3" appearance="outline">
+              <mat-label>Email</mat-label>
+              <input matInput placeholder="" autocomplete="off" formControlName="email">
+            </mat-form-field>
+            <mat-form-field class="w-100 pb-3" appearance="outline">
+              <mat-label>Password</mat-label>
+              <input matInput type="password" placeholder="" autocomplete="off" formControlName="password">
+            </mat-form-field>
+            <button class="btn-login btn col-12 bg-secondaray text-white" [disabled]="loader">
+              <span *ngIf="loader" class="spinner-border spinner-border-sm mr-1" role="status" aria-hidden="true"></span>Login</button>
+            <a class="gray text-right w-100">forget password?</a>
+          </form>
+        </div>
+      </div>
+      <div class="img-container col-7 bg-secondaray text-white">
+        <div class="content">
+          <h2 class="title bold">Customer Management System</h2>
+          <h6>Could you imagain, the future without Customer mangment system</h6>
+        </div>
+      </div>
+    </section>
+
+  </section>
+</section>

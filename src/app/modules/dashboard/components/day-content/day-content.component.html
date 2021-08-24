@@ -1,0 +1,12 @@
+<div class="day-content">
+    <p class="day-number text-center">{{getDay(obj.date)}}</p>
+    <div class="event-list " *ngIf="obj.events">
+        <div class="event" *ngFor="let event of obj.events; let i = index">
+            <div class="d-flex align-items-center" *ngIf="i<3">
+                <time class="event-time gray">{{event.time}}</time>
+                <p class="event-title primary">{{event.title}}</p>
+            </div>
+        </div>
+        <p class="gray more" *ngIf="obj.events.length>3">{{obj.events.length-3}} More</p>
+    </div>
+</div>

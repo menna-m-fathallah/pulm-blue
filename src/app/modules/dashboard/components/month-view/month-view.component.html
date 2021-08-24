@@ -1,0 +1,9 @@
+<div class="d-flex w-100">
+  <div class="day-name col-14 text-center gray" *ngFor="let day of days,let i=index">{{day}}</div>
+</div>
+<div class="content d-flex flex-wrap">
+
+  <app-day-content [obj]="day"
+    [ngClass]="{'active':i==indexOfFirstDate,'today':day.date==today ,'last-month':i < indexOfFirstDate}" class="col-14"
+    *ngFor="let day of monthEvents,let i=index"></app-day-content>
+</div>

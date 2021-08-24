@@ -1,0 +1,50 @@
+<div class="table-container custom-card">
+  <div class="table-header d-flex">
+    <div class="col-18">
+      <h2>Status</h2>
+    </div>
+    <div class="col-18">
+      <h2>Name</h2>
+    </div>
+    <div class="col-15">
+      <h2>Phone</h2>
+    </div>
+    <div class="col-21">
+      <h2>Email</h2>
+    </div>
+    <div class="col-08 text-center">
+      <h2>Visa</h2>
+    </div>
+    <div class="col-012 text-center">
+    <h2>Arrival date</h2>
+    </div>
+    <div class="col-08 "></div>
+  </div>
+  <div class="table-row d-flex" *ngFor="let row of list,let i=index" (click)="addActiveStyle($event)">
+    <div class="col-18">
+      <app-drop-down [class]="row.status" [value]="row.status" [list]="statusList" (valueChange)="updateStatus($event,row,i)"></app-drop-down>
+    </div>
+    <div class="col-18">
+      <a class="user-name" routerLink="profile" [queryParams]="{ id: row.id }" >{{row.name}}</a>
+    </div>
+    <div class="col-15">
+      <p>{{row.phone}}</p>
+    </div>
+    <div class="col-21">
+      <p>{{row.email}}</p>
+    </div>
+    <div class="col-08 text-center" [ngClass]="{'red-color':row.visa=='No'}">
+      <p>{{row.visa}}</p>
+    </div>
+    <div class="col-012 text-center">{{row.arrivalDate}}</div>
+    <div class="col-08 text-center"><i class="material-icons"(click)="AddEvent($event,row)">add_alert</i></div>
+  </div>
+</div>
+<div class="row mt-3 justify-content-between">
+    <div class="">
+      <pagination  *ngIf="dataSource.length/itemsPerPage > 1" previousText="&lsaquo;" nextText="&rsaquo;" [(ngModel)]="currentPage" [totalItems]="dataSource.length" [itemsPerPage]="itemsPerPage" (pageChanged)="handlePagination($event)"></pagination>
+    </div>
+    <div class="col-2 row justify-content-end">
+      <app-drop-down class="col-7" [value]="itemsPerPage" [list]="itemsNumber" (valueChange)="changeItemsNumber($event)"></app-drop-down>
+    </div>
+  </div>

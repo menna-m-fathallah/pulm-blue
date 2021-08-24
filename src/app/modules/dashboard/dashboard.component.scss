@@ -1,0 +1,17 @@
+.table-container{
+    padding: 0px 21px 21px 21px;
+    .header{
+        height: 80px;
+        .title{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .selected-month{
+            span{
+                font-size: 24px;
+                font-weight: normal;
+                padding: 0 40px;
+            }
+        }
+    }
+}
